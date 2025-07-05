@@ -1,0 +1,163 @@
+/* @import "tailwindcss"; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    /* background-color: black; */
+}
+
+.back {
+    width: 100%;
+    
+    height: 100vh;
+    /* background-color: black; */
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover; 
+    /* background-image: unset;Ensures the image covers the entire div */
+    position: absolute;
+}
+
+.top {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+.workingarea {
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    /* background: rgb(14, 2, 2); */
+    /* border: 1px solid rgb(65, 194, 217); */
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav img {
+    height: 60px;
+    width: 100%;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.right a, .left a {
+    color: #fff;
+    font-family: "gilroy";
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    font-weight: 700;
+}
+.hero{
+    position: absolute ;
+    width: 100%;
+    top: 50%;
+    left:0;
+    display: flex;
+    transform: translate(-0%,-50%);
+    justify-content: space-between;
+    /* background :rgb(32, 187, 23); */
+}
+.heroleft{
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: rgb(53, 209, 36); */
+}
+.heroleft .elem{
+  height:7vw;
+  padding-top: 10px;
+  /* background: red; */
+  overflow: hidden;
+}
+.heroright{
+    min-width: 20%;
+    color: white;
+    display:  flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* height: 100px; */
+    /* background-color: yellow; */
+}
+.heroleft .elem h1{
+    line-height: .9;
+    /* padding-righ: 10; */
+    font-family: "kajiro";
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+    font-size: 7vw;
+}
+.heroleft button{
+    padding: .8vw 3vw;
+    /* margin-top: ; */
+    font-size: 3vw;
+    background: #e0caca;
+    /* color: white; */
+    font-family: "kajiro";
+}
+.heroright p{
+    text-align: right;
+    /* margin-bottom: 50px; */
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    font: 40px;
+    
+    font-weight: 300;
+}
+.imgdiv {
+    width: 40%;
+    background: red;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 200px;
+    position: relative; /* Add this to position the image absolutely */
+}
+
+.imgdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    position: absolute; /* Position the image absolutely within the div */
+    top: 0;
+    left: 0;
+}
+.heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
